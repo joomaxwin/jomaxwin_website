@@ -1,0 +1,76 @@
+/* Common styles for all screen sizes */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    background-color: #f0f0f0;
+}
+
+/* Styles for screens wider than 1900px */
+@media (min-width: 1900px) {
+    .gallery {
+        background-color: #e6f7ff;
+    }
+}
+
+/* Styles for screens between 1700px and 1900px */
+@media (min-width: 1700px) and (max-width: 1899px) {
+    .gallery {
+        background-color: #ffe6cc;
+    }
+}
+
+/* Styles for screens between 1200px and 1700px */
+@media (min-width: 1200px) and (max-width: 1699px) {
+    .gallery {
+        background-color: #d9ead3;
+    }
+}
+
+/* Styles for screens between 700px and 1200px */
+@media (min-width: 700px) and (max-width: 1199px) {
+    .gallery {
+        background-color: #f8cecc;
+    }
+}
+
+/* Styles for screens up to 400px */
+@media (max-width: 400px) {
+    .gallery {
+        background-color: #ffd9b3;
+    }
+}
+
+/* Additional styles for default size */
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.gallery img:nth-child(4n+1),
+.gallery img:nth-child(4n+4) {
+    grid-column-end: span 2;
+}
+
+.gallery img:nth-child(4n+2),
+.gallery img:nth-child(4n+3) {
+    grid-row-end: span 2;
+}
+
+.gallery img:nth-child(4n+3) {
+    grid-column-end: span 2;
+}
+
+/* Example styling for images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}

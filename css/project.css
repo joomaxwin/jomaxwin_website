@@ -1,0 +1,85 @@
+.container {
+    width: 80%;
+    max-width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px whitesmoke;
+  }
+  nav {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    color: white;
+    margin-bottom: 30px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 20px; 
+    border: 2px solid transparent; 
+  }
+  
+  nav a:hover {
+    color:black; 
+    background-color: aliceblue; 
+    border-color: whitesmoke; 
+  }
+  .projects-section {
+    background-color: black;
+    padding: 40px 0;
+  }
+  
+  .projects-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .project-card {
+    background-color: black;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+  }
+  
+  .project-card h3 {
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  .project-card p {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .project-card a {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 3px;
+   margin-left: 97px;
+  }
+  
+  .project-card a:hover {
+    background-color: #45a049;
+  }
+  

@@ -1,0 +1,28 @@
+.grid-container{
+     display: grid;
+     grid-template-columns: 10% 18% 18% 18% 18% 18%;
+     padding: 10px;
+     background-color: azure;
+     text-transform: capitalize;
+     font-weight: bold;
+     font-size: medium;
+}
+.grid-items{
+     border-color: rgba(22, 22, 22, 0.8);
+     border: 1px solid black;
+     padding: 10px;
+     text-align: center;
+}
+.grid-row{
+      display: grid;
+      grid-template-rows: 10%;
+      text-align: center;
+}
+.grid-items{
+    border-color: rgba(22, 22, 22, 0.8);
+    border: 1px solid black;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
